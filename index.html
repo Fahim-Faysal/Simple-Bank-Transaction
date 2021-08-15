@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bank</title>
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+      <header>
+            <h1 class="text-5xl text-center mt-12 w-3/4 mx-auto">Fahim Faysal Siyam <span class="text-red-600">Bank Limited</span> </h1>
+      </header>
+     
+<main>
+      <div class="mt-8 w-3/4 mx-auto bg-green-200 p-12">
+            <h3 class="text-3xl ">Email</h3>   
+            <input id="email" class="w-3/4 px-2 py-1 mt-5 mb-5 border border-gray-400 rounded block " type="email" placeholder="Enter The Email">
+            
+            <input id="pass" class="w-3/4 px-2 py-1 border border-gray-400 rounded block" type="password" placeholder="Enter your Password">
+      
+            <button id="btn" class="font-medium text-white bg-yellow-600 mt-5 px-8 py-3 rounded">Submit</button>
+            </div>
+</main>
+      
+<script>
+      document.getElementById('btn').addEventListener('click',function(){
+            const storeEmail = document.getElementById('email')
+            const storePass = document.getElementById('pass')
+
+            if(storeEmail.value == 'faysalsiyam@gmail.com' && storePass.value == '123456'){
+
+               window.location.href='banking.html'
+            }
+            else{
+                  console.log('invalid')
+            }
+      })
+     
+
+</script>
+      
+</body>
+</html>

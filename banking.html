@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Banking</title>
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+      <h1 class="text-5xl text-pink-900 w-3/4 text-center mx-auto my-8">My bank</h1>
+
+      <section class="grid grid-cols-3 gap-4 w-3/4 text-center mx-auto mt-15">
+            <div class="border rounded py-16 bg-green-200">
+                  <h1 class="text-3xl">Deposite</h1>
+                  <h2 class="text-3xl">$<span id="depo-text" class=" text-3xl">00</span></h2>
+            </div>
+            <div class="border rounded py-16 bg-yellow-200">
+                  <h1 class="text-3xl">Withdrew</h1>
+                  <h2 class="text-3xl">$<span id="with-text" class=" text-3xl">00</span></h2>
+            </div>
+            <div class="border rounded py-16 bg-blue-200">
+                  <h1 class="text-3xl">Total</h1>
+                  <h2 class="text-3xl">$<span id="total" class=" text-3xl">1000</span></h2>
+            </div>
+      </section>
+      <section>
+            <div class="grid grid-cols-2 gap-4 w-3/4 text-center mx-auto mt-15">
+            <div class="bg-red-200 mt-5 border rounded p-10">
+                  <input id="depo" class="w-3/4 px-2 py-1 border border-gray-400 rounded block"type="text" placeholder="Enter the DEPOSITE ammount"> 
+              
+                  <button id="depo-btn" class="font-medium text-white bg-green-600 mt-5 px-8 py-3 rounded block">Deposit</button>
+            </div>
+            <div class="bg-purple-200 mt-5 border rounded p-10">
+                  <input id="with" class="w-3/4 px-2 py-1 border border-gray-400 rounded block"type="text" placeholder="Enter the Withdrew ammount"> 
+                
+                  <button id="with-btn" class="font-medium text-white bg-red-600 mt-5 px-8 py-3 rounded block">Withdrew</button>
+            </div>
+           
+      </div>
+      </section>
+      <script src="bank.js"></script>
+</body>
+</html>
